@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant Data</title>
+</head>
+<body>
+<h1>Stored Restaurants</h1>
+<ul>
+    {% for restaurant in restaurants %}
+    <li>{{ restaurant.name }} - Rating: {{ restaurant.rating }} - Address: {{ restaurant.address }} - Phone: {{ restaurant.phone }}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>
